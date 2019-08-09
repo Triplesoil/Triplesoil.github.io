@@ -119,7 +119,7 @@
         <div class="logo-name">Threesoil's blog</div>
         <div class="logo-desc">
             
-            此博客还没修改完成
+            你且修身,你且渡人,你且如水,居恶渊而为善,无尤也
             
         </div>
     </div>
@@ -185,7 +185,7 @@
         
         <li><div class="divider"></div></li>
         <li>
-            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+            <a href="https://github.com/Triplesoil/" class="waves-effect waves-light" target="_blank">
                 <i class="fa fa-github-square fa-fw"></i>Fork Me
             </a>
         </li>
@@ -314,13 +314,13 @@
         <div class="brand">
             <div class="title center-align">
                 
-                    (●&#39;◡&#39;●)
+                    生而为人
                 
             </div>
 
             <div class="description center-align">
                 
-                    此博客还没修改完成
+                    你且修身,你且渡人,你且如水,居恶渊而为善,无尤也
                 
             </div>
         </div>
@@ -337,8 +337,8 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
                 </a>
 
                 
-                <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light btn" target="_blank">
-                    <i class="fa fa-github-alt"></i>Github
+                <a href="https://www.cnblogs.com/threesoil/" class="waves-effect waves-light btn" target="_blank">
+                    <i class="fa fas-fa-blog"></i>博客园cnblogs
                 </a>
                 
             </div>
@@ -380,26 +380,15 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
 $(function () {
     let coverSlider = $('.carousel');
     coverSlider.carousel({
-        duration: Number('120'),
+        duration: Number('500'),
         fullWidth: true,
         indicators: 'true' === 'true'
     });
 
     let carouselIntervalId;
     
-    // Loop to call the next cover article picture.
-    let autoCarousel = function() {
-        carouselIntervalId = setInterval(function () {
-            coverSlider.carousel('next');
-        }, 5000);
-    };
-    autoCarousel();
-    
 
     let restartPlay = function () {
-        
-        clearInterval(carouselIntervalId);
-        autoCarousel();
         
     };
 
@@ -430,17 +419,52 @@ $(function () {
                         <div class="dream">
     
     <div class="title center-align">
-        <i class="fa fa-lightbulb-o"></i>&nbsp;&nbsp;我的梦想
+        <i class="fa fa-lightbulb-o"></i>&nbsp;&nbsp;喜欢的句子
     </div>
     
     <div class="row">
         <div class="col l8 offset-l2 m10 offset-m1 s10 offset-s1 center-align text">
-            不是每个人都应该像我这样去建造一座水晶大教堂，但是每个人都应该拥有自己的梦想，设计自己的梦想，追求自己的梦想，实现自己的梦想。梦想是生命的灵魂，是心灵的灯塔，是引导人走向成功的信仰。有了崇高的梦想，只要矢志不渝地追求，梦想就会成为现实，奋斗就会变成壮举，生命就会创造奇迹。——罗伯·舒乐
+            Life was like a box of chocolates,you never know what you’re gonna get.  --电影《阿甘正传》
         </div>
     </div>
 </div>
                     
 
+                    
+                        
+
+<link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<div class="music-player">
+    
+    <div class="title center-align">
+        <i class="fa fa-music"></i>&nbsp;&nbsp;听听音乐
+    </div>
+    
+    <div class="row">
+        <div class="col l8 offset-l2 m10 offset-m1 s12">
+            <div id="aplayer" class="music"></div>
+        </div>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script>
+$(function () {
+    new APlayer({
+        container: document.getElementById('aplayer'),
+        fixed: 'false' === 'true',
+        autoplay: 'false' === 'true',
+        theme: '#42b983',
+        loop: 'one',
+        order: 'list',
+        preload: 'metadata',
+        volume: Number('0.5'),
+        listFolded: 'true' === 'true',
+        listMaxHeight: '',
+        audio: JSON.parse('[{"name":"飞云之下","artist":"韩红/林俊杰","url":"/medias/fyzx.mp3","cover":"/medias/fyzx.jpg"}]')
+    });
+});
+</script>
                     
 
                     
@@ -558,6 +582,9 @@ $(function () {
             <a href="https://hexo.io/" target="_blank">Hexo</a> 的
             <a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">matery</a>主题搭建.
 
+            
+                &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
+                <span class="white-color">29</span>
             
 
             

@@ -4,18 +4,10 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="typora-vue-theme主题介绍, null">
-    <meta name="description" content="
-#这是第一篇
-
-
-#一级标题
-##二级标题
-###三级标题
-####四级标题
-#####五级标题
-######六级标题
-">
+    <meta name="keywords" content="本博客主题美化修改, null">
+    <meta name="description" content="前言关于hexo-theme-matery的主题部分修改，作者在主题的说明文档中已经说明了。本文就说一说我我认为的重点
+配色顶部菜单栏和页脚的配色是绿色的而背景图片上的一层颜色是紫色粉红等，
+所以我将顶部配色改为紫色到深粉的过渡（紫色是吸管">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -23,7 +15,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>typora-vue-theme主题介绍 | null</title>
+    <title>本博客主题美化修改 | null</title>
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -273,7 +265,7 @@
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        typora-vue-theme主题介绍
+                        本博客主题美化修改
                     </div>
                 </div>
             </div>
@@ -295,12 +287,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Typora/" target="_blank">
-                                <span class="chip bg-color">Typora</span>
-                            </a>
-                        
-                            <a href="/tags/Markdown/" target="_blank">
-                                <span class="chip bg-color">Markdown</span>
+                            <a href="/tags/博客美化/" target="_blank">
+                                <span class="chip bg-color">博客美化</span>
                             </a>
                         
                     </div>
@@ -311,8 +299,8 @@
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Markdown/" class="post-category" target="_blank">
-                                Markdown
+                            <a href="/categories/博客美化/" class="post-category" target="_blank">
+                                博客美化
                             </a>
                         
                     </div>
@@ -330,7 +318,7 @@
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        29
+                        348
                     </div>
                     
 
@@ -353,16 +341,23 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <blockquote>
-<p>#这是第一篇</p>
+                <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>关于hexo-theme-matery的主题部分修改，作者在主题的<a href="https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md" target="_blank" rel="noopener">说明文档</a>中已经说明了。本文就说一说我我认为的重点</p>
+<h1 id="配色"><a href="#配色" class="headerlink" title="配色"></a>配色</h1><p>顶部菜单栏和页脚的配色是绿色的而背景图片上的一层颜色是紫色粉红等，</p>
+<p>所以我将顶部配色改为紫色到深粉的过渡（紫色是吸管工具吸的背景上的颜色）</p>
+<h2 id="修改主题颜色"><a href="#修改主题颜色" class="headerlink" title="修改主题颜色"></a>修改主题颜色</h2><p>在主题文件的 <code>/source/css/matery.css</code> 文件中，搜索 <code>.bg-color</code> 来修改背景颜色：</p>
+<p>/<em> 整体背景颜色，包括导航、移动端的导航、页尾、标签页等的背景颜色. </em>/<br>.bg-color {<br>    background-image: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);<br>}</p>
+<p>@-webkit-keyframes rainbow {<br>   /<em> 动态切换背景颜色. </em>/<br>}</p>
+<p>@keyframes rainbow {<br>    /<em> 动态切换背景颜色. </em>/<br>}</p>
+<blockquote>
+<p>(to right, #6628B0 0%,#D2317E  100%);         ###(这是我的菜单栏颜色过渡)</p>
+<p>@-webkit-keyframes rainbow和@keyframes rainbow可以改背景图片上的那层颜色由于有点多我就没改。。。</p>
 </blockquote>
-<p><img src="https://images.unsplash.com/photo-1565157766821-580c4a1758cf?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=334&amp;q=80" alt="第一"></p>
-<p>#一级标题</p>
-<p>##二级标题</p>
-<p>###三级标题</p>
-<p>####四级标题</p>
-<p>#####五级标题</p>
-<p>######六级标题</p>
+<h1 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h1><p>修改当前主题下source中的网页图标 和medias中主题中引用的各种图片</p>
+<p>具体的引用地址可以看当前主题下的配置文件 _config.yml ，里面有详细的注释</p>
+<h1 id="添加功能"><a href="#添加功能" class="headerlink" title="添加功能"></a>添加功能</h1><p>主要的在主题作者的说明文档里跟着步骤添加插件就可以了</p>
+<p>### </p>
+<h3 id="剩下的想自定义还需要探索"><a href="#剩下的想自定义还需要探索" class="headerlink" title="剩下的想自定义还需要探索"></a>剩下的想自定义还需要探索</h3><p>/溜了</p>
+<p><img src="C:\blog\source\_posts\7.jpg" alt="7"></p>
 
             </div>
             <hr>
@@ -518,7 +513,7 @@
             </div>
             <br>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">
-                    《typora-vue-theme主题介绍》
+                    《本博客主题美化修改》
                 </span> 由
             <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/08/09/di-yi-pian/" property="cc:attributionName" rel="cc:attributionURL">
                 Threesoil
@@ -567,15 +562,15 @@
                 <a href="/2019/08/09/di-yi-pian/">
                     <div class="card-image">
                         
-                        <img src="/images/1.jpg" class="responsive-img" alt="typora-vue-theme主题介绍">
+                        <img src="/images/1.jpg" class="responsive-img" alt="本博客主题美化修改">
                         
-                        <span class="card-title">typora-vue-theme主题介绍</span>
+                        <span class="card-title">本博客主题美化修改</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary">
                         
-                            这是你自定义的文章摘要内容，如果这个属性有值，文
+                            关于hexo的matery主题修改
                         
                     </div>
                     <div class="publish-info">
@@ -586,8 +581,8 @@
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Markdown/" class="post-category" target="_blank">
-                                    Markdown
+                            <a href="/categories/博客美化/" class="post-category" target="_blank">
+                                    博客美化
                                 </a>
                             
                             
@@ -598,12 +593,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Typora/" target="_blank">
-                        <span class="chip bg-color">Typora</span>
-                    </a>
-                    
-                    <a href="/tags/Markdown/" target="_blank">
-                        <span class="chip bg-color">Markdown</span>
+                    <a href="/tags/博客美化/" target="_blank">
+                        <span class="chip bg-color">博客美化</span>
                     </a>
                     
                 </div>
@@ -620,15 +611,15 @@
                 <a href="/2019/08/09/di-yi-pian/">
                     <div class="card-image">
                         
-                        <img src="/images/1.jpg" class="responsive-img" alt="typora-vue-theme主题介绍">
+                        <img src="/images/1.jpg" class="responsive-img" alt="本博客主题美化修改">
                         
-                        <span class="card-title">typora-vue-theme主题介绍</span>
+                        <span class="card-title">本博客主题美化修改</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            这是你自定义的文章摘要内容，如果这个属性有值，文
+                            关于hexo的matery主题修改
                         
                     </div>
                     <div class="publish-info">
@@ -639,8 +630,8 @@
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Markdown/" class="post-category" target="_blank">
-                                    Markdown
+                            <a href="/categories/博客美化/" class="post-category" target="_blank">
+                                    博客美化
                                 </a>
                             
                             
@@ -651,12 +642,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Typora/" target="_blank">
-                        <span class="chip bg-color">Typora</span>
-                    </a>
-                    
-                    <a href="/tags/Markdown/" target="_blank">
-                        <span class="chip bg-color">Markdown</span>
+                    <a href="/tags/博客美化/" target="_blank">
+                        <span class="chip bg-color">博客美化</span>
                     </a>
                     
                 </div>
@@ -721,7 +708,7 @@
 
             
                 &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-                <span class="white-color">29</span>
+                <span class="white-color">348</span>
             
 
             

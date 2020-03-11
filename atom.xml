@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://Triplesoil.github.io/"/>
-  <updated>2019-08-20T15:28:46.286Z</updated>
+  <updated>2020-03-11T05:02:37.310Z</updated>
   <id>https://Triplesoil.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>markdown语法基础</title>
+    <link href="https://Triplesoil.github.io/2020/03/11/markdown/"/>
+    <id>https://Triplesoil.github.io/2020/03/11/markdown/</id>
+    <published>2020-03-11T04:59:25.000Z</published>
+    <updated>2020-03-11T05:02:37.310Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;1-标题&quot;&gt;&lt;a href=&quot;#1-标题&quot; class=&quot;headerlink&quot; title=&quot;1.标题&quot;&gt;&lt;/a&gt;1.标题&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;h2 id=&quot;前面加几个-号就是几级标题共6级&quot;&gt;&lt;a href=&quot;#前面加几个-号就是几级标题共6级&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="语法" scheme="https://Triplesoil.github.io/categories/%E8%AF%AD%E6%B3%95/"/>
+    
+    
+      <category term="markdown" scheme="https://Triplesoil.github.io/tags/markdown/"/>
+    
+  </entry>
   
   <entry>
     <title>本博客主题美化修改</title>

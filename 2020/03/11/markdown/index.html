@@ -4,10 +4,20 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="本博客主题美化修改, null">
-    <meta name="description" content="前言关于hexo-theme-matery的主题部分修改，作者在主题的说明文档中已经说明了。本文就说一说我我认为的重点
-配色顶部菜单栏和页脚的配色是绿色的而背景图片上的一层颜色是紫色粉红等，
-所以我将顶部配色改为紫色到深粉的过渡（紫色是吸管">
+    <meta name="keywords" content="markdown语法基础, null">
+    <meta name="description" content="1.标题
+前面加几个#号就是几级标题共6级
+使用 = 和 - 标记一级和二级标题
+
+
+一级标题
+=======
+
+二级标题
+------
+
+2.字体/分割线/删除线/脚注markdown可使用 斜体 /粗体 /又斜又粗  
+    *斜体*">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -15,7 +25,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>本博客主题美化修改 | null</title>
+    <title>markdown语法基础 | null</title>
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/favicon.ico">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -259,13 +269,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/images/1.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/images/markdown.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        本博客主题美化修改
+                        markdown语法基础
                     </div>
                 </div>
             </div>
@@ -287,8 +297,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/博客美化/" target="_blank">
-                                <span class="chip bg-color">博客美化</span>
+                            <a href="/tags/markdown/" target="_blank">
+                                <span class="chip bg-color">markdown</span>
                             </a>
                         
                     </div>
@@ -299,8 +309,8 @@
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/博客美化/" class="post-category" target="_blank">
-                                博客美化
+                            <a href="/categories/语法/" class="post-category" target="_blank">
+                                语法
                             </a>
                         
                     </div>
@@ -311,21 +321,21 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-08-09
+                    2020-03-11
                 </div>
 
                 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        348
+                        705
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        1 分
+                        2 分
                     </div>
                     
                 
@@ -341,23 +351,144 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>关于hexo-theme-matery的主题部分修改，作者在主题的<a href="https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md" target="_blank" rel="noopener">说明文档</a>中已经说明了。本文就说一说我我认为的重点</p>
-<h1 id="配色"><a href="#配色" class="headerlink" title="配色"></a>配色</h1><p>顶部菜单栏和页脚的配色是绿色的而背景图片上的一层颜色是紫色粉红等，</p>
-<p>所以我将顶部配色改为紫色到深粉的过渡（紫色是吸管工具吸的背景上的颜色）</p>
-<h2 id="修改主题颜色"><a href="#修改主题颜色" class="headerlink" title="修改主题颜色"></a>修改主题颜色</h2><p>在主题文件的 <code>/source/css/matery.css</code> 文件中，搜索 <code>.bg-color</code> 来修改背景颜色：</p>
-<p>/<em> 整体背景颜色，包括导航、移动端的导航、页尾、标签页等的背景颜色. </em>/<br>.bg-color {<br>    background-image: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);<br>}</p>
-<p>@-webkit-keyframes rainbow {<br>   /<em> 动态切换背景颜色. </em>/<br>}</p>
-<p>@keyframes rainbow {<br>    /<em> 动态切换背景颜色. </em>/<br>}</p>
+                <h1 id="1-标题"><a href="#1-标题" class="headerlink" title="1.标题"></a>1.标题</h1><ul>
+<li><h2 id="前面加几个-号就是几级标题共6级"><a href="#前面加几个-号就是几级标题共6级" class="headerlink" title="前面加几个#号就是几级标题共6级"></a>前面加几个#号就是几级标题共6级</h2></li>
+<li><h2 id="使用-和-标记一级和二级标题"><a href="#使用-和-标记一级和二级标题" class="headerlink" title="使用 = 和 - 标记一级和二级标题"></a>使用 = 和 - 标记一级和二级标题</h2></li>
+</ul>
+<hr>
+<pre class=" language-bash"><code class="language-bash">一级标题
+<span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">=</span>
+
+二级标题
+------
+</code></pre>
+<h1 id="2-字体-分割线-删除线-脚注"><a href="#2-字体-分割线-删除线-脚注" class="headerlink" title="2.字体/分割线/删除线/脚注"></a>2.字体/分割线/删除线/脚注</h1><p>markdown可使用 斜体 /粗体 /又斜又粗  </p>
+<pre><code>    *斜体*
+    _斜体_
+    **粗体**
+    __粗体__
+    ***又斜又粗***
+    ___又斜又粗___
+</code></pre><p>显示效果</p>
+<p><em>斜体</em><br>_斜体_<br><strong>粗体</strong><br><strong>粗体</strong><br><strong><em>又斜又粗</em></strong><br><strong><em>又斜又粗</em></strong>  </p>
+<h3 id="分割线：在一行中使用三个及以上的星号-减号-底线-都可以建立分割线"><a href="#分割线：在一行中使用三个及以上的星号-减号-底线-都可以建立分割线" class="headerlink" title="分割线：在一行中使用三个及以上的星号*  减号 -  底线_  都可以建立分割线"></a>分割线：在一行中使用三个及以上的星号*  减号 -  底线_  都可以建立分割线</h3><pre><code>***
+****
+* *  *
+---
+- - - -
+___
+</code></pre><p>显示效果：</p>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<pre><code>~~删除线~~
+</code></pre><p>效果：<del>删除线</del></p>
+<pre><code>&lt;u&gt;下划线&lt;/u&gt;
+</code></pre><p>效果：<u>下划线</u></p>
+<h3 id="脚注"><a href="#脚注" class="headerlink" title="脚注"></a>脚注</h3><pre><code>脚注[^脚注]
+[^脚注]:这是一个脚注
+</code></pre><p>效果：</p>
+<p>脚注<a href="这是一个脚注">^脚注</a></p>
+<h1 id="3-列表"><a href="#3-列表" class="headerlink" title="3.列表"></a>3.列表</h1><h5 id="无序列表使用星号（-）、加号（-）、减号（-），记得符号和文字中间加空格"><a href="#无序列表使用星号（-）、加号（-）、减号（-），记得符号和文字中间加空格" class="headerlink" title="无序列表使用星号（*）、加号（+）、减号（-），记得符号和文字中间加空格"></a>无序列表使用星号（*）、加号（+）、减号（-），<u>记得符号和文字中间加空格</u></h5><pre><code>* 第一项
+* 第二项
+
++ 第一项
++ 第二项
+
+- 第一项
+- 第二项
+</code></pre><p>效果如下：</p>
+<ul>
+<li>第一项</li>
+<li>第二项</li>
+</ul>
+<ul>
+<li>第一项</li>
+<li>第二项</li>
+</ul>
+<ul>
+<li>第一项</li>
+<li>第二项</li>
+</ul>
+<h5 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h5><pre><code>1. 第一项
+2. 第二项
+</code></pre><p>效果</p>
+<ol>
+<li>第一项</li>
+<li>第二项</li>
+</ol>
+<h5 id="列表嵌套"><a href="#列表嵌套" class="headerlink" title="列表嵌套"></a>列表嵌套</h5><pre><code>1. 第一项
+    - 第一项中第一个元素
+    - 第二个
+2. 第二项
+    - 第二项第一
+    - 第二项第二
+</code></pre><ol>
+<li>第一项<ul>
+<li>第一项中第一个元素</li>
+<li>第二个</li>
+</ul>
+</li>
+<li>第二项<ul>
+<li>第二项第一</li>
+<li>第二项第二</li>
+</ul>
+</li>
+</ol>
+<h1 id="4-区块"><a href="#4-区块" class="headerlink" title="4.区块"></a>4.区块</h1><pre><code>&gt;第一层
+&gt;&gt;第二层
+&gt;&gt;&gt;第三层
+</code></pre><p>效果：</p>
 <blockquote>
-<p>(to right, #6628B0 0%,#D2317E  100%);         ###(这是我的菜单栏颜色过渡)</p>
-<p>@-webkit-keyframes rainbow和@keyframes rainbow可以改背景图片上的那层颜色由于有点多我就没改。。。</p>
+<p>第一层</p>
+<blockquote>
+<p>第二层</p>
+<blockquote>
+<p>第三层</p>
 </blockquote>
-<h1 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h1><p>修改当前主题下source中的网页图标 和medias中主题中引用的各种图片</p>
-<p>具体的引用地址可以看当前主题下的配置文件 _config.yml ，里面有详细的注释</p>
-<h1 id="添加功能"><a href="#添加功能" class="headerlink" title="添加功能"></a>添加功能</h1><p>主要的在主题作者的说明文档里跟着步骤添加插件就可以了</p>
-<p>### </p>
-<h3 id="剩下的想自定义还需要探索"><a href="#剩下的想自定义还需要探索" class="headerlink" title="剩下的想自定义还需要探索"></a>剩下的想自定义还需要探索</h3><p>/溜了</p>
-<p><img src="\medias\7.png" alt="/ε=ε=ε=┏(゜ロ゜;)┛"></p>
+</blockquote>
+</blockquote>
+<h5 id="区块和列表可以互相嵌套"><a href="#区块和列表可以互相嵌套" class="headerlink" title="区块和列表可以互相嵌套"></a>区块和列表可以互相嵌套</h5><h1 id="5-代码块"><a href="#5-代码块" class="headerlink" title="5.代码块"></a>5.代码块</h1><p>首行4个空格/一个tab制表位/前后三个`  </p>
+<pre><code>code();
+int();
+</code></pre><h1 id="6-链接"><a href="#6-链接" class="headerlink" title="6.链接"></a>6.链接</h1><pre><code>[百度](www.baidu.com)
+或者
+&lt;https://www.baidu.com&gt;
+
+链接也可以用变量来代替，文档末尾附带变量地址：
+这个链接用 1 作为网址变量 [Google][1]
+这个链接用 runoob 作为网址变量 [Runoob][runoob]
+然后在文档的结尾为变量赋值（网址）
+
+  [1]: http://www.google.com/
+  [runoob]: http://www.runoob.com/
+</code></pre><p>效果<br><a href="www.baidu.com">百度</a><br><a href="https://www.baidu.com" target="_blank" rel="noopener">https://www.baidu.com</a></p>
+<p>链接也可以用变量来代替，文档末尾附带变量地址：<br>这个链接用 1 作为网址变量 <a href="http://www.google.com/" target="_blank" rel="noopener">Google</a><br>这个链接用 runoob 作为网址变量 <a href="http://www.runoob.com/" target="_blank" rel="noopener">Runoob</a><br>然后在文档的结尾为变量赋值（网址）</p>
+<h1 id="7-图片"><a href="#7-图片" class="headerlink" title="7.图片"></a>7.图片</h1><p>举例</p>
+<pre><code>![RUNOOB 图标](http://static.runoob.com/images/runoob-logo.png)
+![RUNOOB 图标](http://static.runoob.com/images/runoob-logo.png &quot;RUNOOB&quot;)
+</code></pre><pre class=" language-html"><code class="language-html">和链接一样可以使用变量然后文档结尾为变量赋值
+
+Markdown 还没有办法指定图片的高度与宽度，如果你需要的话，你可以使用普通的 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span><span class="token punctuation">></span></span> 标签。
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>http://static.runoob.com/images/runoob-logo.png<span class="token punctuation">"</span></span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>50%<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+</code></pre>
+<h1 id="8-转义"><a href="#8-转义" class="headerlink" title="8.转义"></a>8.转义</h1><p>反斜杠加以下符号可以输入普通符号</p>
+<pre><code>\   反斜线
+`   反引号
+*   星号
+_   下划线
+{}  花括号
+[]  方括号
+()  小括号
+#   井字号
++   加号
+-   减号
+.   英文句点
+!   感叹号
+</code></pre><p>以上。</p>
 
             </div>
             <hr>
@@ -513,9 +644,9 @@
             </div>
             <br>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">
-                    《本博客主题美化修改》
+                    《markdown语法基础》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/08/09/di-yi-pian/" property="cc:attributionName" rel="cc:attributionURL">
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2020/03/11/markdown/" property="cc:attributionName" rel="cc:attributionURL">
                 Threesoil
             </a> 采用
             <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.zh">
@@ -556,7 +687,8 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2020/03/11/markdown/">
                     <div class="card-image">
@@ -573,9 +705,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2020-03-11
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-03-11
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -588,6 +720,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -603,7 +736,7 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="fa fa-dot-circle-o"></i>
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
                 <a href="/2019/08/09/di-yi-pian/">
@@ -615,7 +748,7 @@
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary block-with-text">
+                    <div class="summary">
                         
                             关于hexo的matery主题修改
                         
@@ -636,7 +769,6 @@
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
